@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fdb76823-09ec-44ec-86f7-9ba36a4a70a9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2684/IServiceRoute.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IServiceRoute.disco" MetadataType="Disco" ID="c16480d6-85f0-4108-8426-c8c15bde89c3" SourceId="1" SourceUrl="http://localhost:2684/IServiceRoute.svc?disco" />
+    <MetadataFile FileName="ServiceRoute.wsdl" MetadataType="Wsdl" ID="5e1e74ce-f82b-4277-b292-b2150f5a4d6f" SourceId="1" SourceUrl="http://localhost:2684/IServiceRoute.svc?wsdl" />
+    <MetadataFile FileName="IServiceRoute.xsd" MetadataType="Schema" ID="81a69c57-402d-4329-9bd1-342e83e55b44" SourceId="1" SourceUrl="http://localhost:2684/IServiceRoute.svc?xsd=xsd1" />
+    <MetadataFile FileName="IServiceRoute1.xsd" MetadataType="Schema" ID="fef8435b-d244-4c20-9f00-0add68bfd860" SourceId="1" SourceUrl="http://localhost:2684/IServiceRoute.svc?xsd=xsd2" />
+    <MetadataFile FileName="IServiceRoute2.xsd" MetadataType="Schema" ID="4982c17e-567b-4a36-a1e9-4340a957c490" SourceId="1" SourceUrl="http://localhost:2684/IServiceRoute.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

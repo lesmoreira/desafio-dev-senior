@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2684/IServiceRoute.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/wsMapLinkInformacoesRota.Model" />
+  <xs:element name="GetInformacoesRota">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="enderecoPartida" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cidadeUfPartida" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="enderecoDestino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cidadeUfDestino" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/wsMapLinkInformacoesRota.Model" minOccurs="0" name="veiculo" nillable="true" type="q1:Veiculo" />
+        <xs:element minOccurs="0" name="tipoRota" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInformacoesRotaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/wsMapLinkInformacoesRota.Model" minOccurs="0" name="GetInformacoesRotaResult" nillable="true" type="q2:ResponseInformacoesRota" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="strGetInformacoesRota">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="enderecoPartida" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cidadeUfPartida" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="enderecoDestino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cidadeUfDestino" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="capacidadeTanque" type="xs:int" />
+        <xs:element minOccurs="0" name="categoriaVeiculo" type="xs:int" />
+        <xs:element minOccurs="0" name="consumoMedio" type="xs:float" />
+        <xs:element minOccurs="0" name="valorCombustivel" type="xs:double" />
+        <xs:element minOccurs="0" name="velocidadeMedia" type="xs:int" />
+        <xs:element minOccurs="0" name="tipoRota" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="strGetInformacoesRotaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strGetInformacoesRotaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

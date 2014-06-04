@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/wsMapLinkInformacoesRota.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/wsMapLinkInformacoesRota.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Veiculo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CapacidadeTanque" type="xs:int" />
+      <xs:element minOccurs="0" name="CategoriaVeiculo" type="xs:int" />
+      <xs:element minOccurs="0" name="ConsumoMedio" type="xs:float" />
+      <xs:element minOccurs="0" name="ValorCombustivel" type="xs:double" />
+      <xs:element minOccurs="0" name="VelocidadeMedia" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Veiculo" nillable="true" type="tns:Veiculo" />
+  <xs:complexType name="ResponseInformacoesRota">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CustoCombustivel" type="xs:double" />
+      <xs:element minOccurs="0" name="CustoPedagioCombustivel" type="xs:double" />
+      <xs:element minOccurs="0" name="DistanciaTotal" type="xs:double" />
+      <xs:element minOccurs="0" name="Exception" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TempoTotal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseInformacoesRota" nillable="true" type="tns:ResponseInformacoesRota" />
+</xs:schema>
